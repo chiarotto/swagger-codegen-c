@@ -134,7 +134,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **orderId** | **Long**| ID of pet that needs to be fetched | [enum: ]
+ **orderId** | **Long**| ID of pet that needs to be fetched | [enum: 1, 5]
 
 ### Return type
 
