@@ -1,0 +1,13 @@
+{{#authMethods}}
+{{#@first}}
+{{#or isBasic isBearer}}
+val principal = call.authentication.principal<UserIdPrincipal>()
+{{/or}}
+{{#isApiKey}}
+val principal = call.authentication.principal<ApiPrincipal>()
+{{/isApiKey}}
+{{#isOAuth}}
+val principal = call.authentication.principal<OAuthAccessTokenResponse>()
+{{/isOAuth}}
+{{/@first}}
+{{/authMethods}}
