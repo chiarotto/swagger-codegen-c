@@ -1,6 +1,8 @@
 openapi: 3.0.0
 info:
-  title: User API
+  title: Coface User API
+  description: Coface user api description....
+  termsOfService: Coface Rights
   version: 1.0.0
 components:
   schemas:
@@ -14,7 +16,6 @@ components:
         email:
           type: string
           format: email
-
 paths:
   /users/{userId}:
     get:
